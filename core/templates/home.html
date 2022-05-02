@@ -1,0 +1,38 @@
+{% extends 'partials/base.html' %}
+{% block content %}
+<div class="container">
+    {% include 'mapa.html' %}
+</div>
+{% endblock %}
+
+{% block js %}
+<script>
+    $('form').on('submit', function(e) {
+    let url = '{% url "adiciona-alvo"  %}'
+    let postData = $('form').serialize();
+    console.log(postData)
+    $.ajax({
+      url: url,
+      type: 'POST',
+      data: postData,
+      success: function(response) {
+        console.log('sucesso')
+      },
+      error: function(xhr) {
+        console.log('Erro')
+      },
+      complete: function() {
+        closeModal()
+      }
+    });
+    e.preventDefault();
+  });
+
+  function closeModal() {
+    $('#Modal').modal('hide');
+    // Limpa os campos
+  }
+</script>
+
+</script>
+{% endblock js %}

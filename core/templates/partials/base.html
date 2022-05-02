@@ -1,3 +1,6 @@
+{% load crispy_forms_tags %}
+{% load static %}
+{% load django_bootstrap5 %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,29 +19,27 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-info">
     <a class="navbar-brand" href="#">Geo Join</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="">Map <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-            </li>
-        </ul>
-      </div>
-        <form class="justify-content-end d-flex me-2" method="POST">
-            {% csrf_token %}
-            {{ form }}
-            <button class="btn btn-outline-success my-2 my-sm-0 mx-3" type="submit">Search</button>
-        </form>
+      <ul class="navbar-nav mr-auto">
 
-        
-    
-</nav>
+
+
+        <li class="nav-item">
+          <a class="btn btn-info btn-block btn-password" href="#" data-toggle="modal" data-target="#Modal">Adicionar
+            Alvo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+    </div>
+
+
+  </nav>
 
   {% block content %}
 
@@ -54,7 +55,13 @@
     <!-- Copyright -->
   </footer>
 
+  {% include "modal.html" %}
 
+  {% block js %}
+
+  {% endblock js %}
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
