@@ -1,38 +1,153 @@
 {% extends 'partials/base.html' %}
 {% block content %}
 <div class="container">
-    {% include 'mapa.html' %}
+  {% include 'mapa.html' %}
 </div>
 {% endblock %}
 
-{% block js %}
+{% block add_js %}
 <script>
-    $('form').on('submit', function(e) {
+
+  $('form').on('submit', function (e) {
     let url = '{% url "adiciona-alvo"  %}'
     let postData = $('form').serialize();
-    console.log(postData)
+    var addModal = $('#myModal');
+    function closeModal() {
+    };
     $.ajax({
       url: url,
       type: 'POST',
       data: postData,
-      success: function(response) {
+      success: function (response) {
         console.log('sucesso')
+        addModal.hide()
+        closeModal()
       },
-      error: function(xhr) {
+      error: function (xhr) {
         console.log('Erro')
       },
-      complete: function() {
-        closeModal()
+      complete: function () {
+        console.log('ai meu deus')
+        window.location.reload()
       }
     });
     e.preventDefault();
   });
 
-  function closeModal() {
-    $('#Modal').modal('hide');
-    // Limpa os campos
-  }
+  $('#editar').click(function () {
+    alert("button");
+  });
+
+
 </script>
 
 </script>
-{% endblock js %}
+{% endblock add_js %}
+
+{% block edit_js %}
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function (event) {
+    var editModal = document.getElementById('editModal');
+    try {
+      editModal.addEventListener('show.bs.modal', function (event) {
+        var button = event.relatedTarget;
+        var recipient = button.getAttribute('data-bs-title');
+        var url = button.getAttribute('data-bs-url');
+        console.log(url)
+        var modalTitle = editModal.querySelector('.modal-title');
+        var formElement = document.getElementById('form');
+        
+        $.ajax({
+          type: 'GET',
+          url: url,
+          success: function (response) {
+            var modalBodyInput = editModal.querySelector('.modal-body ');
+            modalBodyInput.innerHTML = response.data;
+          },
+          error: function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("Um erro ocorreu, entre em contato com a CHIT.");
+            console.log(XMLHttpRequest.status)
+            return false
+          }
+        })
+        formElement.setAttribute('action', url);
+        modalTitle.textContent = recipient;
+
+        formElement.addEventListener("submit", function (e) {
+          let input = formElement.querySelector('[type="submit"]')
+          input.disabled = true
+          var url = formElement.action
+
+          var data = new FormData(formElement);
+          $.ajax({
+            type: 'POST',
+            url: url,
+            data: data,
+            processData: false,
+            contentType: false,
+            success: function (response) {
+              if (response.form) {
+                var modalBodyInput = editModal.querySelector('.modal-body ');
+                modalBodyInput.innerHTML = response.form;
+                input.disabled = false
+              }
+              if (response.status == 1) {
+                let modal = Modal.getInstance(editModal)
+                modal.hide()
+
+                window.location.replace(response.url)
+              }
+            },
+            error: function (XMLHttpRequest, textStatus, errorThrown) {
+              alert("Um erro ocorreu, entre em contato com a CHIT.");
+              console.log(XMLHttpRequest.status)
+            }
+          })
+          e.stopImmediatePropagation()
+          e.stopPropagation();
+          e.preventDefault();
+        }, true)
+      })
+    }
+    catch (TypeError) { }
+  });
+</script>
+{% endblock %}
+
+{% block delete_js %}
+<script>
+  document.addEventListener("DOMContentLoaded", function(event) {
+    var deleteModal = $('#deleteModal');
+    console.log(deleteModal)
+    try
+    {
+        deleteModal.addEventListener('show.bs.modal', function (event) {
+          console.log('aaa')
+            var button = event.relatedTarget;
+            var recipient = button.getAttribute('data-bs-title');
+            var url = button.getAttribute('data-bs-url');
+            console.log(url)
+            var modalTitle = deleteModal.querySelector('.modal-title');
+            var formElement = document.getElementById('deleteForm');
+            var confirmarExcluir = document.getElementById('confirmarExcluir');
+            
+            formElement.setAttribute('action', url);
+            modalTitle.textContent = recipient; 
+            var tmp = confirmarExcluir.textContent
+            confirmarExcluir.textContent = confirmarExcluir.textContent + recipient + "?"; 
+    
+            deleteModal.addEventListener('hidden.bs.modal', function (event) {
+                confirmarExcluir.textContent  = tmp
+            })
+    
+            formElement.addEventListener("submit", function(e){
+                let input = formElement.querySelector('[type="submit"]')
+                input.disabled = true
+            })
+        })
+    }
+    catch (TypeError) {}
+})
+</script>
+{% endblock %}

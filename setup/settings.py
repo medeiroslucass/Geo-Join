@@ -41,7 +41,6 @@ INSTALLED_APPS = [
 
     # my app
     'core',
-    'crispy_forms',
     'django_bootstrap5',
 ]
 

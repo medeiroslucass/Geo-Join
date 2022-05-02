@@ -23,7 +23,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_eee4ea461c1519553ad99129cb5526c5 {
+                #map_a4b3f69c4a44bd957b578bcf52fcc51e {
                     position: relative;
                     width: 800.0px;
                     height: 500.0px;
@@ -35,17 +35,17 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_eee4ea461c1519553ad99129cb5526c5" ></div>
+            <div class="folium-map" id="map_a4b3f69c4a44bd957b578bcf52fcc51e" ></div>
         
 </body>
 <script>    
     
-            var map_eee4ea461c1519553ad99129cb5526c5 = L.map(
-                "map_eee4ea461c1519553ad99129cb5526c5",
+            var map_a4b3f69c4a44bd957b578bcf52fcc51e = L.map(
+                "map_a4b3f69c4a44bd957b578bcf52fcc51e",
                 {
-                    center: [33.0, 62.0],
+                    center: [10.0, 12.0],
                     crs: L.CRS.EPSG3857,
-                    zoom: 0,
+                    zoom: 1,
                     zoomControl: true,
                     preferCanvas: false,
                 }
@@ -55,34 +55,682 @@
 
         
     
-            var tile_layer_db927474772af7f8e5c89db26a7fe664 = L.tileLayer(
+            var tile_layer_d873c4e4dc9d54bcd60c6e15cff88394 = L.tileLayer(
                 "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_eee4ea461c1519553ad99129cb5526c5);
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
         
     
-            var marker_8e99cdd58193e95e8e0343d3d5a8e47c = L.marker(
-                [1.1341, -123.4049],
+            var marker_3ba599baa23ef375b73983f87d9f3bea = L.marker(
+                [-14.235006, -51.92528],
                 {}
-            ).addTo(map_eee4ea461c1519553ad99129cb5526c5);
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
         
     
-        var popup_ea271b3d80a5de30d5c53fcce55cc3e6 = L.popup({"maxWidth": "100%"});
+        var popup_b27d2f96de2606412160348fb76c0069 = L.popup({"maxWidth": "100%"});
 
         
-            var html_de2266d372fc1c109e810f98973ca89c = $(`<div id="html_de2266d372fc1c109e810f98973ca89c" style="width: 100.0%; height: 100.0%;">teste<a href="list/"><button class="botao">Ver</button></a><a href="add_alvo"><button class="botao"> Adicionar Alvo</button></a></div>`)[0];
-            popup_ea271b3d80a5de30d5c53fcce55cc3e6.setContent(html_de2266d372fc1c109e810f98973ca89c);
+            var html_5f5e8e71661fd39c0b3e171143e5f7d7 = $(`<div id="html_5f5e8e71661fd39c0b3e171143e5f7d7" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/1'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/1'>Editar</a></li></ul></li></div>`)[0];
+            popup_b27d2f96de2606412160348fb76c0069.setContent(html_5f5e8e71661fd39c0b3e171143e5f7d7);
         
 
-        marker_8e99cdd58193e95e8e0343d3d5a8e47c.bindPopup(popup_ea271b3d80a5de30d5c53fcce55cc3e6)
+        marker_3ba599baa23ef375b73983f87d9f3bea.bindPopup(popup_b27d2f96de2606412160348fb76c0069)
         ;
 
         
     
     
-            marker_8e99cdd58193e95e8e0343d3d5a8e47c.bindTooltip(
+            marker_3ba599baa23ef375b73983f87d9f3bea.bindTooltip(
                 `<div>
-                     Clique para saber mais!
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c20adc585a66358593687e92cb00c9db = L.marker(
+                [40.4637, -3.7492],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_7dbd8c46399a5e6aa3917ccac707fdae = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3a1f52f00906bf15f39b65387b0a0d45 = $(`<div id="html_3a1f52f00906bf15f39b65387b0a0d45" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/4'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/4'>Editar</a></li></ul></li></div>`)[0];
+            popup_7dbd8c46399a5e6aa3917ccac707fdae.setContent(html_3a1f52f00906bf15f39b65387b0a0d45);
+        
+
+        marker_c20adc585a66358593687e92cb00c9db.bindPopup(popup_7dbd8c46399a5e6aa3917ccac707fdae)
+        ;
+
+        
+    
+    
+            marker_c20adc585a66358593687e92cb00c9db.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_ade54ab032acb84d8c7aaa4526bd6549 = L.marker(
+                [52.370216, 4.895168],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_4791ed9e4663e052570b1bfb4b130e54 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7dd3ec4708248c0fb7edf1ba38aa972b = $(`<div id="html_7dd3ec4708248c0fb7edf1ba38aa972b" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/5'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/5'>Editar</a></li></ul></li></div>`)[0];
+            popup_4791ed9e4663e052570b1bfb4b130e54.setContent(html_7dd3ec4708248c0fb7edf1ba38aa972b);
+        
+
+        marker_ade54ab032acb84d8c7aaa4526bd6549.bindPopup(popup_4791ed9e4663e052570b1bfb4b130e54)
+        ;
+
+        
+    
+    
+            marker_ade54ab032acb84d8c7aaa4526bd6549.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8e934c2fb5a11a4e6bb56884086bbe34 = L.marker(
+                [40.6643, -73.9385],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_12ec77ce6f3cb60b82f64f9de2b6ffaf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f534b7f5efc649bb6a63b518ab020bd2 = $(`<div id="html_f534b7f5efc649bb6a63b518ab020bd2" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/6'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/6'>Editar</a></li></ul></li></div>`)[0];
+            popup_12ec77ce6f3cb60b82f64f9de2b6ffaf.setContent(html_f534b7f5efc649bb6a63b518ab020bd2);
+        
+
+        marker_8e934c2fb5a11a4e6bb56884086bbe34.bindPopup(popup_12ec77ce6f3cb60b82f64f9de2b6ffaf)
+        ;
+
+        
+    
+    
+            marker_8e934c2fb5a11a4e6bb56884086bbe34.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7df27ddc2b1f3d1d6de99b04a3d15a5f = L.marker(
+                [51.05, 3.71667],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_d5951debcb9ea1c00cb876ca828e0f4d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_69a5c7d2ee602a31ce713e1505d0e58b = $(`<div id="html_69a5c7d2ee602a31ce713e1505d0e58b" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/33'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/33'>Editar</a></li></ul></li></div>`)[0];
+            popup_d5951debcb9ea1c00cb876ca828e0f4d.setContent(html_69a5c7d2ee602a31ce713e1505d0e58b);
+        
+
+        marker_7df27ddc2b1f3d1d6de99b04a3d15a5f.bindPopup(popup_d5951debcb9ea1c00cb876ca828e0f4d)
+        ;
+
+        
+    
+    
+            marker_7df27ddc2b1f3d1d6de99b04a3d15a5f.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c753486e99a92c9cb7be532a1128951e = L.marker(
+                [51.05, 3.71667],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_451da6cc72e514ba023da1d2b77dfcad = L.popup({"maxWidth": "100%"});
+
+        
+            var html_fa9259f5a4dde9dff43039af000b1e47 = $(`<div id="html_fa9259f5a4dde9dff43039af000b1e47" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/34'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/34'>Editar</a></li></ul></li></div>`)[0];
+            popup_451da6cc72e514ba023da1d2b77dfcad.setContent(html_fa9259f5a4dde9dff43039af000b1e47);
+        
+
+        marker_c753486e99a92c9cb7be532a1128951e.bindPopup(popup_451da6cc72e514ba023da1d2b77dfcad)
+        ;
+
+        
+    
+    
+            marker_c753486e99a92c9cb7be532a1128951e.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_364c16441b2ca7b25adac7956ecf6c0d = L.marker(
+                [123.123, 532.22],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_824413451f73c0f101d903260d9c449b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_968dcc20823f26ea8cacae125465daee = $(`<div id="html_968dcc20823f26ea8cacae125465daee" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/35'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/35'>Editar</a></li></ul></li></div>`)[0];
+            popup_824413451f73c0f101d903260d9c449b.setContent(html_968dcc20823f26ea8cacae125465daee);
+        
+
+        marker_364c16441b2ca7b25adac7956ecf6c0d.bindPopup(popup_824413451f73c0f101d903260d9c449b)
+        ;
+
+        
+    
+    
+            marker_364c16441b2ca7b25adac7956ecf6c0d.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_7f8e2fb7d76cb3e7bc76a3cab481e31f = L.marker(
+                [-1.2233, -121.735],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_f5ecc221b02b268ed2d5c8f50ee9967b = L.popup({"maxWidth": "100%"});
+
+        
+            var html_a46e4b483365d554e043c65137f2cd16 = $(`<div id="html_a46e4b483365d554e043c65137f2cd16" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/36'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/36'>Editar</a></li></ul></li></div>`)[0];
+            popup_f5ecc221b02b268ed2d5c8f50ee9967b.setContent(html_a46e4b483365d554e043c65137f2cd16);
+        
+
+        marker_7f8e2fb7d76cb3e7bc76a3cab481e31f.bindPopup(popup_f5ecc221b02b268ed2d5c8f50ee9967b)
+        ;
+
+        
+    
+    
+            marker_7f8e2fb7d76cb3e7bc76a3cab481e31f.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_6f02fc2cb335f22bc84e760ca4b99da0 = L.marker(
+                [-1.2233, -121.735],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_5e8f52497dd771f1d371dda9bbfbc127 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_393e85c2891f60ac7e8bd1118a9c612e = $(`<div id="html_393e85c2891f60ac7e8bd1118a9c612e" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/37'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/37'>Editar</a></li></ul></li></div>`)[0];
+            popup_5e8f52497dd771f1d371dda9bbfbc127.setContent(html_393e85c2891f60ac7e8bd1118a9c612e);
+        
+
+        marker_6f02fc2cb335f22bc84e760ca4b99da0.bindPopup(popup_5e8f52497dd771f1d371dda9bbfbc127)
+        ;
+
+        
+    
+    
+            marker_6f02fc2cb335f22bc84e760ca4b99da0.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3b6d014a2f6854d5189fee96e3c71c91 = L.marker(
+                [234.0, 234.0],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_0c36e63bc93b344b88a9f4a94eda230f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_d0504c2e2edc73d6ab40419462f415cd = $(`<div id="html_d0504c2e2edc73d6ab40419462f415cd" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/38'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/38'>Editar</a></li></ul></li></div>`)[0];
+            popup_0c36e63bc93b344b88a9f4a94eda230f.setContent(html_d0504c2e2edc73d6ab40419462f415cd);
+        
+
+        marker_3b6d014a2f6854d5189fee96e3c71c91.bindPopup(popup_0c36e63bc93b344b88a9f4a94eda230f)
+        ;
+
+        
+    
+    
+            marker_3b6d014a2f6854d5189fee96e3c71c91.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d367200ae91e3aaf990a7b5398a042d8 = L.marker(
+                [123.12, 123.1242],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_7a02f017f90f5697304a79c5869d68fb = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2f52ec61c47d81157e6e80292129b8ae = $(`<div id="html_2f52ec61c47d81157e6e80292129b8ae" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/39'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/39'>Editar</a></li></ul></li></div>`)[0];
+            popup_7a02f017f90f5697304a79c5869d68fb.setContent(html_2f52ec61c47d81157e6e80292129b8ae);
+        
+
+        marker_d367200ae91e3aaf990a7b5398a042d8.bindPopup(popup_7a02f017f90f5697304a79c5869d68fb)
+        ;
+
+        
+    
+    
+            marker_d367200ae91e3aaf990a7b5398a042d8.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_5a246e1d7fd0f64383e41353c5ed98a5 = L.marker(
+                [-14.235006, -51.92528],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_d269cdf70f4f0b470c955401f0f1a0ea = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4c1a5e7d062df0205df03a83754f8aa2 = $(`<div id="html_4c1a5e7d062df0205df03a83754f8aa2" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/2'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/2'>Editar</a></li></ul></li></div>`)[0];
+            popup_d269cdf70f4f0b470c955401f0f1a0ea.setContent(html_4c1a5e7d062df0205df03a83754f8aa2);
+        
+
+        marker_5a246e1d7fd0f64383e41353c5ed98a5.bindPopup(popup_d269cdf70f4f0b470c955401f0f1a0ea)
+        ;
+
+        
+    
+    
+            marker_5a246e1d7fd0f64383e41353c5ed98a5.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c43f1236a65835dbfcfaa42941fdd47d = L.marker(
+                [-14.235006, -51.92528],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_4ac070f9ce0f4c182d9140d2279823e1 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_ac004bc2ff0c53ed3d69c17ae2e5f996 = $(`<div id="html_ac004bc2ff0c53ed3d69c17ae2e5f996" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/41'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/41'>Editar</a></li></ul></li></div>`)[0];
+            popup_4ac070f9ce0f4c182d9140d2279823e1.setContent(html_ac004bc2ff0c53ed3d69c17ae2e5f996);
+        
+
+        marker_c43f1236a65835dbfcfaa42941fdd47d.bindPopup(popup_4ac070f9ce0f4c182d9140d2279823e1)
+        ;
+
+        
+    
+    
+            marker_c43f1236a65835dbfcfaa42941fdd47d.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_875154b0449d96dfa5552d615ba05f5a = L.marker(
+                [40.6643, -73.9385],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_64de3e68a02bc3efc11967ddc2a15314 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_023fb1c9c488bdf6fdd6989995bb7330 = $(`<div id="html_023fb1c9c488bdf6fdd6989995bb7330" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/43'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/43'>Editar</a></li></ul></li></div>`)[0];
+            popup_64de3e68a02bc3efc11967ddc2a15314.setContent(html_023fb1c9c488bdf6fdd6989995bb7330);
+        
+
+        marker_875154b0449d96dfa5552d615ba05f5a.bindPopup(popup_64de3e68a02bc3efc11967ddc2a15314)
+        ;
+
+        
+    
+    
+            marker_875154b0449d96dfa5552d615ba05f5a.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_034e5755b072d8513d140a7e6e9dc0bb = L.marker(
+                [40.6643, 10.0],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_c65e654ce84b70d83a7c79d3da81171c = L.popup({"maxWidth": "100%"});
+
+        
+            var html_1c3d4b8a5595d86ebd4f9c7ad8c45c95 = $(`<div id="html_1c3d4b8a5595d86ebd4f9c7ad8c45c95" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/44'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/44'>Editar</a></li></ul></li></div>`)[0];
+            popup_c65e654ce84b70d83a7c79d3da81171c.setContent(html_1c3d4b8a5595d86ebd4f9c7ad8c45c95);
+        
+
+        marker_034e5755b072d8513d140a7e6e9dc0bb.bindPopup(popup_c65e654ce84b70d83a7c79d3da81171c)
+        ;
+
+        
+    
+    
+            marker_034e5755b072d8513d140a7e6e9dc0bb.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8b443d25dcadcd7863ff8010ca37e8fd = L.marker(
+                [-14.235006, 10.0],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_41398a648a649c39dee9692383a7141f = L.popup({"maxWidth": "100%"});
+
+        
+            var html_54087e5f1b7eca37354b8bce13a82b5f = $(`<div id="html_54087e5f1b7eca37354b8bce13a82b5f" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/45'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/45'>Editar</a></li></ul></li></div>`)[0];
+            popup_41398a648a649c39dee9692383a7141f.setContent(html_54087e5f1b7eca37354b8bce13a82b5f);
+        
+
+        marker_8b443d25dcadcd7863ff8010ca37e8fd.bindPopup(popup_41398a648a649c39dee9692383a7141f)
+        ;
+
+        
+    
+    
+            marker_8b443d25dcadcd7863ff8010ca37e8fd.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c7100172ecc022ddc19c7c8a60d9dff7 = L.marker(
+                [-14.235006, 10.0],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_8f4abec72eb7d036981a0a4892d207bf = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e2dcf383993e82961dc5de2cd2c959d3 = $(`<div id="html_e2dcf383993e82961dc5de2cd2c959d3" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/46'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/46'>Editar</a></li></ul></li></div>`)[0];
+            popup_8f4abec72eb7d036981a0a4892d207bf.setContent(html_e2dcf383993e82961dc5de2cd2c959d3);
+        
+
+        marker_c7100172ecc022ddc19c7c8a60d9dff7.bindPopup(popup_8f4abec72eb7d036981a0a4892d207bf)
+        ;
+
+        
+    
+    
+            marker_c7100172ecc022ddc19c7c8a60d9dff7.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e9ddca7480615b67a41de04f1afbf332 = L.marker(
+                [-14.235006, 9.0],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_668bd3e090a60792753ed412c16e8e98 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c2200908f2babb0165ae26c6cdf9a824 = $(`<div id="html_c2200908f2babb0165ae26c6cdf9a824" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/47'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/47'>Editar</a></li></ul></li></div>`)[0];
+            popup_668bd3e090a60792753ed412c16e8e98.setContent(html_c2200908f2babb0165ae26c6cdf9a824);
+        
+
+        marker_e9ddca7480615b67a41de04f1afbf332.bindPopup(popup_668bd3e090a60792753ed412c16e8e98)
+        ;
+
+        
+    
+    
+            marker_e9ddca7480615b67a41de04f1afbf332.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_68ea00596b2dd7dd73570954315bc2e5 = L.marker(
+                [-14.235006, 9.0],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_3c71634bd80df52efe4cd1aea20f5822 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_5d042dac6fe29f4a59a4d6b91772dcbd = $(`<div id="html_5d042dac6fe29f4a59a4d6b91772dcbd" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/40'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/40'>Editar</a></li></ul></li></div>`)[0];
+            popup_3c71634bd80df52efe4cd1aea20f5822.setContent(html_5d042dac6fe29f4a59a4d6b91772dcbd);
+        
+
+        marker_68ea00596b2dd7dd73570954315bc2e5.bindPopup(popup_3c71634bd80df52efe4cd1aea20f5822)
+        ;
+
+        
+    
+    
+            marker_68ea00596b2dd7dd73570954315bc2e5.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6cc3e5c9a6d114a65062177fb6fd662 = L.marker(
+                [-14.235006, 9.0],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_43efa8b92e27bc34e5389438f943c5f3 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7a527c4569e0f8bffddd190a8a2aa29c = $(`<div id="html_7a527c4569e0f8bffddd190a8a2aa29c" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/48'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/48'>Editar</a></li></ul></li></div>`)[0];
+            popup_43efa8b92e27bc34e5389438f943c5f3.setContent(html_7a527c4569e0f8bffddd190a8a2aa29c);
+        
+
+        marker_a6cc3e5c9a6d114a65062177fb6fd662.bindPopup(popup_43efa8b92e27bc34e5389438f943c5f3)
+        ;
+
+        
+    
+    
+            marker_a6cc3e5c9a6d114a65062177fb6fd662.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_51cb726a65dac20a9d64559f9da68999 = L.marker(
+                [-14.235006, 9.0],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_f45a5baeb532e7ba80f5ffd7b73bfc45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_7400f77dd21341164780d409553912ca = $(`<div id="html_7400f77dd21341164780d409553912ca" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/42'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/42'>Editar</a></li></ul></li></div>`)[0];
+            popup_f45a5baeb532e7ba80f5ffd7b73bfc45.setContent(html_7400f77dd21341164780d409553912ca);
+        
+
+        marker_51cb726a65dac20a9d64559f9da68999.bindPopup(popup_f45a5baeb532e7ba80f5ffd7b73bfc45)
+        ;
+
+        
+    
+    
+            marker_51cb726a65dac20a9d64559f9da68999.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_47a811996a943f33aff36e88c01954de = L.marker(
+                [-14.235006, 10.0],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_a0430f61cb6d8f2db077d26c01e40d4a = L.popup({"maxWidth": "100%"});
+
+        
+            var html_4d9b463857cfdd234315ecceb27a645c = $(`<div id="html_4d9b463857cfdd234315ecceb27a645c" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/49'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/49'>Editar</a></li></ul></li></div>`)[0];
+            popup_a0430f61cb6d8f2db077d26c01e40d4a.setContent(html_4d9b463857cfdd234315ecceb27a645c);
+        
+
+        marker_47a811996a943f33aff36e88c01954de.bindPopup(popup_a0430f61cb6d8f2db077d26c01e40d4a)
+        ;
+
+        
+    
+    
+            marker_47a811996a943f33aff36e88c01954de.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8d6a5a3e102ef6fbf51854205b513e70 = L.marker(
+                [-14.235006, 1.0],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_ea56f00054b179737d8b7338d95da081 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_73398dcf672b2a9a7fce03a22cd287dd = $(`<div id="html_73398dcf672b2a9a7fce03a22cd287dd" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/50'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/50'>Editar</a></li></ul></li></div>`)[0];
+            popup_ea56f00054b179737d8b7338d95da081.setContent(html_73398dcf672b2a9a7fce03a22cd287dd);
+        
+
+        marker_8d6a5a3e102ef6fbf51854205b513e70.bindPopup(popup_ea56f00054b179737d8b7338d95da081)
+        ;
+
+        
+    
+    
+            marker_8d6a5a3e102ef6fbf51854205b513e70.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ef5b755a6b224d20231e66764c92132 = L.marker(
+                [-14.235006, 10.0],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_4c4f0bfdbf16deaa6f8456088de89735 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_c48f7176774d4ad0cc1db64edf229d9f = $(`<div id="html_c48f7176774d4ad0cc1db64edf229d9f" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/51'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/51'>Editar</a></li></ul></li></div>`)[0];
+            popup_4c4f0bfdbf16deaa6f8456088de89735.setContent(html_c48f7176774d4ad0cc1db64edf229d9f);
+        
+
+        marker_0ef5b755a6b224d20231e66764c92132.bindPopup(popup_4c4f0bfdbf16deaa6f8456088de89735)
+        ;
+
+        
+    
+    
+            marker_0ef5b755a6b224d20231e66764c92132.bindTooltip(
+                `<div>
+                     Maguinho!
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_3e384e25d07bc1a57ca99941ccef9e6f = L.marker(
+                [-14.235006, 2.0],
+                {}
+            ).addTo(map_a4b3f69c4a44bd957b578bcf52fcc51e);
+        
+    
+        var popup_de1e0e0bdb274261a3e42e029feb1f71 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_3df4a53192cdebfe5c89df727368461e = $(`<div id="html_3df4a53192cdebfe5c89df727368461e" style="width: 100.0%; height: 100.0%;"><li class='nav-item dropdown'><a class='nav-link  active dropdown-toggle' href='#' id='navbarDropdown' role='button' data-bs-toggle='dropdown' aria-expanded='false'>Alvo</a>   <ul class='dropdown-menu' aria-labelledby='navbarDropdown'> <li><a class='dropdown-item' aria-current='page' data-bs-toggle='modal' data-bs-title='{ alvo.nome}'   data-bs-target='#deleteModal' data-bs-url ='delete-alvo/52'>Delete</a></li>   <li><a class='dropdown-item' aria-current='page'  data-bs-toggle='modal' data-bs-target='#editModal' data-bs-title='Adicionar Alvo' form='form' data-bs-url= 'editar-alvo/52'>Editar</a></li></ul></li></div>`)[0];
+            popup_de1e0e0bdb274261a3e42e029feb1f71.setContent(html_3df4a53192cdebfe5c89df727368461e);
+        
+
+        marker_3e384e25d07bc1a57ca99941ccef9e6f.bindPopup(popup_de1e0e0bdb274261a3e42e029feb1f71)
+        ;
+
+        
+    
+    
+            marker_3e384e25d07bc1a57ca99941ccef9e6f.bindTooltip(
+                `<div>
+                     Maguinho!
                  </div>`,
                 {"sticky": true}
             );

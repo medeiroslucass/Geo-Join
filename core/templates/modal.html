@@ -1,14 +1,15 @@
 <!-- person_modal.html -->
-<div class="modal fade" id="Modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal " id="myModal" data-bs-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h4 class="modal-title" id="myModalLabel">Adicionar Alvo</h4>
-                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+                <button id="teste" type="button" class="close" data-bs-dismiss="modal" aria-label="Fechar"><span
+                        aria-hidden="true">&times;</span></button>
             </div>
             <!-- Formulario -->
             <form>
-                
+
                 <div class="modal-body">
                     {% csrf_token %}
                     <div class="form-group">
@@ -24,28 +25,46 @@
     </div>
 </div>
 
-
-<!-- person_modal.html -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title" id="myModalLabel">Adicionar Pessoa</h4>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <!-- Formulario -->
-        <form>
-          <div class="modal-body">
-            {% csrf_token %}
-            <div class="form-group">
-              {{ form.as_p }}
+<!-- Edit Modal -->
+<div class="modal" id="editModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
             </div>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-            <button type="submit" class="btn btn-primary">Salvar</button>
-          </div>
-        </form>
-      </div>
+            <form id="editForm" method="post" class="form" enctype="">
+                {% csrf_token %}
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <input type="submit" class="btn btn-danger profile-button" value="Salvar">
+                </div>
+            </form>
+        </div>
     </div>
-  </div>
+</div>
+
+<!-- Delete modal -->
+<div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+            <form id="deleteForm" method="post" class="form" enctype="">
+                {% csrf_token %}
+                <div class="modal-body">
+                    <h5 id="confirmarExcluir">Tem certeza que deseja excluir o Alvo? </h2>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                    <input type="submit" class="btn btn-danger profile-button" value="Excluir">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
